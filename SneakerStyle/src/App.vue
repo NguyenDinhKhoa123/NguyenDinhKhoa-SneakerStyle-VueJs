@@ -1,7 +1,16 @@
+<template>
+  <router-view />
+  <ToastContainer />
+</template>
+
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import ToastContainer from '@/components/ToastContainer.vue'
 </script>
 
-<template>
-  <HelloWorld />
-</template>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--ss-bg, #f3f4f6);
+  color: #111827;
+}
+</style>
